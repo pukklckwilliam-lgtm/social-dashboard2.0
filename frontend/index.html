@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Social Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📊 Social Dashboard</h2>
+
+<!-- 上传 -->
+<input type="file" id="fileInput" />
+
+<!-- 账号映射 -->
+<h3>账号映射</h3>
+<input id="account" placeholder="账号ID">
+<input id="platform" placeholder="平台">
+<input id="product" placeholder="产品">
+<button onclick="saveMapping()">保存映射</button>
+
+<!-- 数据输出 -->
+<h3>结果</h3>
+<pre id="output"></pre>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
